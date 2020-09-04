@@ -351,19 +351,6 @@ p {
 	background-position: center;
 }
 
-.item1:hover {
-	background-image: url(./img/front.png);
-}
-
-.item2:hover {
-	/* background-image: none; */
-	background-image: url(./img/server.png);
-}
-
-.item3:hover {
-	background-image: url(./img/db.png);
-}
-
 #services .service-item::after {
 	content: '';
 	position: absolute;
