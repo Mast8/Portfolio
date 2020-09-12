@@ -15,7 +15,7 @@ html {
 	scroll-behavior: smooth;
 }
 a {
-	/* color: snow; */
+	color: blue;
 	text-decoration: none;
 }
 
@@ -604,13 +604,6 @@ p {
 	font-weight: 500;
 }
 
-#contact a {
-	color: blue;
-}
-
-#contact .contact-items a:hover {
-	color: rgb(15, 80, 155);
-}
 /*End contact Section */
 
 /* Footer */
