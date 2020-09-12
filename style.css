@@ -603,6 +603,14 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+
+#contact a {
+	color: blue;
+}
+
+#contact a:hover {
+	color: rgb(15, 80, 155);
+}
 /*End contact Section */
 
 /* Footer */
