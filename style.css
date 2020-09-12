@@ -15,7 +15,7 @@ html {
 	scroll-behavior: smooth;
 }
 a {
-	color: blue;
+	color: snow;
 	text-decoration: none;
 }
 
@@ -604,6 +604,9 @@ p {
 	font-weight: 500;
 }
 
+#contact .git-account {
+	color: blue;
+}
 /*End contact Section */
 
 /* Footer */
