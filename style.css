@@ -1,7 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Lobster&display=swap');
 
 :root {
 	--mainColor: rgb(63, 34, 226);
+	--mainFont: 'Josefin Sans', sans-serif;
+    --thirdFont:   'Lobster', cursive;
 }
 
 * {
@@ -9,9 +13,14 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+h1 {
+	font-family: var(--thirdFont);
+}
+
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--mainFont);
 	scroll-behavior: smooth;
 }
 a {
@@ -52,7 +61,7 @@ p {
 	font-weight: 300;
 	color: black;
 	margin-bottom: 10px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: .2rem;
 	text-align: center;
 }
@@ -68,7 +77,7 @@ p {
 	background-color: transparent;
 	border: 2px solid blue;
 	font-size: 2rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: .1rem;
 	margin-top: 30px;
 	transition: .3s ease;
@@ -83,7 +92,7 @@ p {
 
 .brand h1 {
 	font-size: 3rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: white;
 }
 
@@ -143,7 +152,7 @@ p {
 	letter-spacing: .2rem;
 	text-decoration: none;
 	color: white;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	padding: 20px;
 	display: block;
 }
@@ -233,7 +242,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/rain.gif);
+	background-image: url(./img/code.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -335,6 +344,7 @@ p {
 }
 
 #services .service-item {
+	font-size: 12px;
 	height: 25rem;
 	flex-basis: 80%;
 	display: flex;
@@ -374,7 +384,7 @@ p {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 #services .service-item p {
@@ -422,6 +432,7 @@ p {
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
+	padding: 2rem 0;
 }
 
 #projects .project-info {
@@ -451,9 +462,14 @@ p {
 	color: white;
 }
 
+#projects .project-img-container {
+
+}
+
 #projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
+	/* padding: 1rem 1rem; */
+	flex-basis: 45%;
+	/* height: 300px; */
 	overflow: hidden;
 	position: relative;
 }
@@ -469,9 +485,9 @@ p {
 	opacity: .1;
 }
 
-#projects .project-img img {
+/* #projects .project-img img {
 	transition: .3s ease transform;
-}
+} */
 /* 
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
@@ -516,7 +532,7 @@ p {
 }
 
 #about .col-right {
-	width: 100%;
+	width: 80%;
 }
 
 #about .col-right h2 {
@@ -699,6 +715,7 @@ p {
 		visibility: visible;
 	}
 }
+
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -727,15 +744,16 @@ p {
 		flex-direction: row;
 	}
 
-	#projects .project-item:nth-child(even) {
+	/* change position */
+	/* #projects .project-item:nth-child(even) {
 		flex-direction: row-reverse;
-	}
+	} */
 
 	#projects .project-item {
 		height: 400px;
 		margin: 0;
-		width: 100%;
-		border-radius: 0;
+		width: 85%;
+		border-radius: 4px;
 	}
 	
 	#projects .all-projects .project-info {
