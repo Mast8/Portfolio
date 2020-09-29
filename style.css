@@ -14,6 +14,37 @@
 	box-sizing: border-box;
 }
 
+
+  .typewriting {
+	border-right: solid 3px rgba(0,255,0,.75);
+	white-space: nowrap;
+	overflow: hidden;    
+	font-family: 'Source Code Pro', monospace;  
+	font-size: 28px;
+	color: rgba(255,255,255,.70);
+  }
+  
+  /* Animation */
+  .typewriting {
+	animation: animated-text 4s steps(20,end) 1s 1 normal both,
+			   animated-cursor 600ms steps(20,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+	from{width: 0;}
+	to{width: 415px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+	from{border-right-color: rgba(4, 0, 255, 0.75);}
+	to{border-right-color: transparent;}
+  }
+
+
 h1 {
 	font-family: var(--thirdFont);
 }
@@ -619,6 +650,7 @@ p {
 }
 
 #contact .git-account {
+	font-size: 13px;
 	color: blue;
 }
 /*End contact Section */
